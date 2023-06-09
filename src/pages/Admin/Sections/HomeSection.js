@@ -57,7 +57,7 @@ export const HomeSection = (props) => {
   useEffect(() => {
     onLocalisation();
     onLines().catch((err) => {
-      console.error("err", err);
+      console.error("err onLines", err);
     });
     setValues(stateObject);
   }, [stationAdded, stationDeleted]);

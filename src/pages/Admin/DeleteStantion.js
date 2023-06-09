@@ -52,7 +52,7 @@ export const DeleteStantion = ({
     getLines()
       .then((localizationResult) => {})
       .catch((err) => {
-        console.error("err", err);
+        console.error("err getLines", err);
       });
   }, [shouldReRender]);
 

@@ -44,12 +44,10 @@ const LineStations = () => {
     }
   }, [currentLineName]);
 
-  console.log(line);
-
   const dotClickHandler = (index) => setActiveSlide(index);
 
   const [activeSlide, setActiveSlide] = useState(0);
-
+  console.log("stations", stations)
   return (
     <div className="Home">
       <div className="Home-container">

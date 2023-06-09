@@ -53,7 +53,7 @@ export const DeleteNew = ({
     getLines()
       .then((localizationResult) => {})
       .catch((err) => {
-        console.error("err", err);
+        console.error("err on getLines", err);
       });
   }, [shouldReRender]);
 

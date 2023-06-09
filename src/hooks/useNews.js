@@ -8,7 +8,7 @@ export const useNews = () => {
   const onRefresh = async () => {
     try {
       const result = await Axios.get("http://localhost:3000/news");
-
+      console.log("result", result)
       dispatch(update(result.data));
     } catch (error) {
       console.error(`Refresh has been failed with error: ${error}`);

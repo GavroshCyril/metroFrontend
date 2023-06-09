@@ -64,7 +64,6 @@ function SubmitComment() {
         .delete(`http://localhost:3000/comments/${commentToDelete.id_comments}`)
         .then((response) => {
           // Handle successful deletion
-          console.log(response.data.message);
           // Dispatch the delete comment action
           dispatch(deleteCommentAction(commentToDelete.id_comments));
           // Add the deleted comment to the deletedComments state

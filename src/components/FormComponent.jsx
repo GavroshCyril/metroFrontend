@@ -54,7 +54,6 @@ const FormComponent = () => {
     axios
       .post("http://localhost:3000/submit-form", formData)
       .then((response) => {
-        console.log(response.data);
         setIsSubmitting(false);
         setSubmitSuccess(true);
         setFormData({
@@ -65,7 +64,7 @@ const FormComponent = () => {
         });
       })
       .catch((error) => {
-        console.error(error);
+        console.error("error POST submit-form", error);
         setIsSubmitting(false);
       });
   };

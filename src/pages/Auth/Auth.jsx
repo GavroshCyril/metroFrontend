@@ -122,7 +122,7 @@ const Search = () => {
         }
       })
       .catch((err) => {
-        console.log("err", err);
+        console.log("err on login", err);
       });
   };
 
