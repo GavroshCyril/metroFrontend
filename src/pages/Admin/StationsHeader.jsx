@@ -77,7 +77,7 @@ export const StationsHeader = ({ name, lineId, setStationAdded }) => {
         setIsChanging(false);
         getLocalisation();
         getLines().catch((err) => {
-          console.error("err", err);
+          console.error("err on getLines", err);
         });
         setStationAdded(stationNameDB);
         setIsOpen(false);
@@ -92,7 +92,7 @@ export const StationsHeader = ({ name, lineId, setStationAdded }) => {
   useEffect(() => {
     getLocalisation();
     getLines().catch((err) => {
-      console.error("err", err);
+      console.error("err on getLines", err);
     });
   }, []);
 

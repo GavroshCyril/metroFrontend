@@ -15,9 +15,6 @@ export const NewsHeader = ({ name, newId, setNewAdded }) => {
   const [isChanging, setIsChanging] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  console.log("name", name);
-  console.log("newId", newId);
-
   const [value, setValue] = useState();
   const getLocalisation = useLocalisation();
 
@@ -78,7 +75,7 @@ export const NewsHeader = ({ name, newId, setNewAdded }) => {
           setIsChanging(false);
           getLocalisation();
           getNews().catch((err) => {
-            console.error("err", err);
+            console.error("err on getNews", err);
           });
           /* setStationAdded(stationNameDB); */
           setNewAdded(newsTitleDB);
@@ -94,7 +91,7 @@ export const NewsHeader = ({ name, newId, setNewAdded }) => {
   useEffect(() => {
     getLocalisation();
     getNews().catch((err) => {
-      console.error("err", err);
+      console.error("err on getNews", err);
     });
   }, []);
 

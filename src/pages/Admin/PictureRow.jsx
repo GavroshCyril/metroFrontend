@@ -77,7 +77,7 @@ export const PictureRow = ({ lineName, pictureName }) => {
   useEffect(() => {
     onLocalisation()
       .catch((err) => {
-        console.error("err", err);
+        console.error("err onLocalisation", err);
       });
   }, [shouldReRender]);
 

@@ -8,7 +8,7 @@ import {selectLocalizedState} from "../../store/localizationSlice";
 
 function LineSlide({station}) {
   const state = useSelector(selectLocalizedState);
-
+  console.log("state", state)
 
   return (
     <Card  className="Card">

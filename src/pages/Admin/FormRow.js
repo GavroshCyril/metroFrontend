@@ -11,14 +11,10 @@ import CreateIcon from "@mui/icons-material/Create";
 import { useTranslation } from "react-i18next";
 
 export const FormRow = ({ title, name }) => {
-  console.log("title", title);
-  console.log("name", name);
   const [t] = useTranslation();
   const [isChanging, setIsChanging] = useState(false);
   const locale = useSelector(selectLocale);
-
   const [value, setValue] = useState(title);
-  console.log("value", value);
   const [shouldReRender, setShouldReRender] = useState(false);
   const onLocalisation = useLocalisation();
 
@@ -41,11 +37,9 @@ export const FormRow = ({ title, name }) => {
 
   useEffect(() => {
     onLocalisation().catch((err) => {
-      console.error("err", err);
+      console.error("err onLocalisation", err);
     });
   }, [shouldReRender]);
-
-  console.log("value00", value);
 
   return (
     <>

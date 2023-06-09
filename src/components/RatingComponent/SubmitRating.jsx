@@ -54,7 +54,7 @@ function SubmitRating() {
         closeDeleteConfirmation(); // Закрыть диалоговое окно после удаления
       })
       .catch((error) => {
-        console.log(error);
+        console.log("error during delete reviews", error);
       });
   };
 
@@ -152,7 +152,7 @@ function SubmitRating() {
           const showDeleteIcon = isCurrentUserReview && user.id;
 
           return (
-            <div className="submit-review" style={styles.submitReviewCont}>
+            <div key={formattedDate} className="submit-review" style={styles.submitReviewCont}>
               <div className="submit-review-header">
                 <span className="submit-review-date">{formattedDate}</span>
               </div>

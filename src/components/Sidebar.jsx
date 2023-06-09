@@ -81,8 +81,6 @@ const Sidebar = ({ children }) => {
     resultRoutes = routes;
   }
 
-  console.log("resultRoutes", resultRoutes);
-
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const theme = useTheme();

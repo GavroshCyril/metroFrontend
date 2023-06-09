@@ -7,8 +7,6 @@ import { useRefresh } from '../hooks/useRefresh'
 import { REFRESH_TOKEN_TIMEOUT } from './constants';
 import { isUserLoggedIn, logout, update } from "../store/userSlice";
 
-
-
 export const TokenManager = ({ children }) => {
   const { pathname } = useLocation();
   const onRefresh = useRefresh();
@@ -35,10 +33,6 @@ export const TokenManager = ({ children }) => {
   );
 
   useEffect(() => {
-    console.log("useEffect============");
-    console.log("refreshToken", refreshToken);
-    console.log("isLoggedIn", isLoggedIn);
-    
     if (refreshToken && isLoggedIn) {
       const decoded = JwtDecode(refreshToken);
 
@@ -46,7 +40,6 @@ export const TokenManager = ({ children }) => {
       if (decoded && decoded.exp && Date.now() >= decoded.exp * 1000) {
         console.log("RefreshToken expired");
       } else {
-        console.log("decoded", decoded)
         const user = {
           id: decoded.id,
           name: decoded.name,

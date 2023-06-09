@@ -22,10 +22,7 @@ import { useTranslation } from "react-i18next";
 export const NewsSection = (props) => {
   const [t] = useTranslation();
   const state = useSelector(selectLocalizedState);
-
-  console.log("state", state);
   const newsState = useSelector(selectNews);
-
   const localizedState = useSelector(selectLocalizedState);
   const onLocalisation = useLocalisation();
   const [newsAdded, setNewsAdded] = useState("");
@@ -51,11 +48,11 @@ export const NewsSection = (props) => {
     getNews()
       .then(() => {})
       .catch((err) => {
-        console.error("err", err);
+        console.error("err on getNews", err);
       });
     setValues(stateObject);
   }, [newsAdded, newsDeleted]);
-  console.log("newsState", newsState);
+
   return (
     <form autoComplete="off" noValidate {...props} className="fonts">
       <Card sx={{ margin: 3 }}>

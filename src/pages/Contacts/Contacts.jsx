@@ -49,7 +49,6 @@ const Contacts = () => {
 
   useEffect(() => {
     const res = onReviews();
-    console.log("res", res);
   });
 
   const isLoggedIn = useSelector(isUserLoggedIn);
