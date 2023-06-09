@@ -1,0 +1,56 @@
+.start-comment-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.comment-title {
+  color: rgba(17, 17, 17, 0.979);
+}
+
+.comment-container {
+  /*   width: 1120px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.comment-review {
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin-top: 12px;
+}
+
+.comment-review-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-review-date {
+  color: rgba(0, 0, 0, 0.534);
+}
+
+.comment-review-text {
+  margin-top: 15px;
+}
+
+.comment-from {
+  width: 100%;
+}
+
+.comment-title {
+  color: rgba(56, 56, 56, 0.979);
+}
+
+.delete-icon-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: grey;
+}

@@ -1,0 +1,68 @@
+.Payment {
+  background: url("../../Assets/Images/michalovo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.Payment-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center; /* 
+    width: 400px; */
+  height: 340px;
+  background-color: rgba(0, 0, 0, 0.686);
+  max-height: 44%;
+  margin-left: 60px;
+}
+
+.Payment-title {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 2%;
+  margin-top: 10%;
+}
+
+.payment-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.payment-text {
+  margin-top: 16px;
+  white-space: pre-line;
+}
+
+.PaymentDetails {
+  background: url("../../Assets/Images/kompozicia1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.slider-card {
+  width: 340px !important;
+  margin-right: 10px;
+  outline: none;
+}
+
+.slider-card:last-child {
+  margin-right: 0;
+}
+
+.alert-hover:hover {
+  background-color: rgba(70, 184, 192, 0.384);
+}

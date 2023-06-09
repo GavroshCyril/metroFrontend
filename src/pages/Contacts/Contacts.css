@@ -1,0 +1,42 @@
+#submit-rating-wrapp::-webkit-scrollbar {
+  height: 9px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#submit-rating-wrapp::-webkit-scrollbar-track {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 5px;
+}
+
+#submit-rating-wrapp::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #356184;
+  background: linear-gradient(
+    90deg,
+    rgb(38, 65, 103) 26%,
+    rgb(47, 97, 167) 97%
+  );
+  border-radius: 5px;
+}
+
+.Contacts {
+  background: url("../../Assets/Images/petrowscina.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.info-desc {
+  margin-top: 10px;
+}
+
+.submit-rating-wrapp {
+  max-width: 100%;
+  overflow-x: auto;
+}

@@ -1,0 +1,25 @@
+.Resources {
+  background: url("../../Assets/Images/GreenBranch/vokzalnaya/vokzalnaya03.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resources-desc {
+  display: block;
+  max-width: 54%;
+}
+
+.content {
+  padding: 0 20px 0 83px;
+}
+
+.warning-login {
+  font-weight: 500;
+}
